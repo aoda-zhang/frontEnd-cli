@@ -1,0 +1,20 @@
+{
+  "name": "frontEnd-cli",
+  "version": "1.0.0",
+  "description": "一个专注于前端的完全脚手架",
+  "main": "index.js",
+  "bin": {
+    "frontEnd": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "aoda",
+    "email": "aoda2826@qq.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.1.0"
+  }
+}
