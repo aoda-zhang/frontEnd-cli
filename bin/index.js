@@ -1,22 +1,51 @@
 #! /usr/bin/env node
 
+// 命令执行（必选）
 const program = require('commander')
+// 特定图形绘制（可选）
+const figlet = require('figlet')
+// 特定样式命令行（可选，注意版本问题）
+const chalk = require('chalk')
+// 获取package.json 特定信息
+const packageJson=require('../package.json')
+
 
 program
   // 自定义定义命令和参数
-  .command('创建前端项目 <app-name>')
+  .command('create <项目名称>')
   .description('创建一个新的项目')
   // -f or --force 为强制创建，如果创建的目录存在则直接覆盖
   .option('-f, --force', '如果项目存在则会直接覆盖')
   .action((name, options) => {
     // 打印执行结果
-    console.log('name:',name,'options:',options)
+    // console.log('name:',name,'options:',options)
+    // 在 create.js 中执行创建任务
+    require('../lib/index.js')(name, options)
   })
   
 program
    // 配置版本号信息
   .version(`v${require('../package.json').version}`)
   .usage('<command> [option]')
+
+// 帮助命令
+  program
+  .on('--help', () => {
+    // 使用 figlet 绘制 脚手架Logo
+    console.log('\r\n' + figlet.textSync('aoda', {
+      font: 'Ghost',
+      horizontalLayout: 'default',
+      verticalLayout: 'default',
+      width: 80,
+      whitespaceBreak: true
+    }));
+    // 新增说明信息
+    console.log(chalk.green('有问题找我,☎️ 182838，微信 342524'));
+  })
+
+
+
+
   
-// 解析用户执行命令传入参数
+// 解析用户执行的命令
 program.parse(process.argv);
