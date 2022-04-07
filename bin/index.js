@@ -17,9 +17,7 @@ program
   // -f or --force 为强制创建，如果创建的目录存在则直接覆盖
   .option('-f, --force', '如果项目存在则会直接覆盖')
   .action((name, options) => {
-    // 打印执行结果
-    // console.log('name:',name,'options:',options)
-    // 在 create.js 中执行创建任务
+    // 执行具体的项目创建动作
     require('../lib/index.js')(name, options)
   })
   
