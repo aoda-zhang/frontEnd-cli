@@ -38,12 +38,8 @@ program
       whitespaceBreak: true
     }));
     // 新增说明信息
-    console.log(chalk.green('有问题找我,☎️ 182838，微信 342524'));
+    console.log(chalk.green('抱歉未能给您解决脚手架带来的问题，如需帮助，请联系我，电话 19102632826，base：成都'));
   })
-
-
-
-
   
 // 解析用户执行的命令
 program.parse(process.argv);
