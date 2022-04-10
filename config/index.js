@@ -33,5 +33,6 @@ module.exports = {
     "脚手架创建失败, 请尝试在终端中运行frontEnd --help 寻求帮助！",
   /**获取个人项目仓库url*/
   // CLI_GETREPO_URL: `https://gitee.com/api/v5/orgs/${this?.CURRENT_GIT_USER}/repos`,
-  CLI_GETREPO_URL: `https://api.github.com/orgs/aodaGit/repos`,
+  // CLI_GETREPO_URL: "https://api.github.com/orgs/aodaGit/repos",
+  CLI_GETREPO_URL: "随机测试",
 };
