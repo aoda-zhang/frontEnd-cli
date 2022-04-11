@@ -1,6 +1,4 @@
 module.exports = {
-  // TODO 完善工程化（请求封装，proxy代理设置，路由配置，webpack扩展配置，多语言扩展）
-  // 脚手架测试，发送到npm包
   /**脚手架当前支持创建的项目技术 */
   CURRENT_SUPPORT_KEY: ["react", "vue3", "koa2"],
   /**当前采用的git用户账号*/
