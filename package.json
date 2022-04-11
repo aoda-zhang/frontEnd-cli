@@ -11,10 +11,7 @@
     "frontEnd",
     "脚手架"
   ],
-  "author": {
-    "name": "aodaking",
-    "email": "aoda2826@qq.com"
-  },
+  "author": "aodaking",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.26.1",
