@@ -1,10 +1,8 @@
 module.exports = {
-  // TODO 完善远端文件过滤
-  // TODO 完善流程逻辑，询问用户 具体的方向 node后端，web前端
   // TODO 完善工程化（请求封装，proxy代理设置，路由配置，webpack扩展配置，多语言扩展）
-  //TODO 下载码云  https://github.com/mengmengzp/cli/blob/main/bin/fems-create
+  // 脚手架测试，发送到npm包
   /**脚手架当前支持创建的项目技术 */
-  CURRENT_SUPPORT_KEY: ["vue-template", "vue3.0-template"],
+  CURRENT_SUPPORT_KEY: ["react", "vue3", "koa2"],
   /**当前采用的git用户账号*/
   CURRENT_GIT_USER: "aodaGit-org",
   /**当前生成的cli自定义logo名*/
@@ -32,6 +30,5 @@ module.exports = {
   CLI_DOWNLOADING_ERROR_HELP_MESSAGE:
     "脚手架创建失败, 请尝试在终端中运行frontEnd --help 寻求帮助！",
   /**获取个人项目仓库url*/
-  // CLI_GETREPO_URL: "https://api.github.com/orgs/aodaGit-org/repos",
-  CLI_GETREPO_URL: "测试是否联通",
+  CLI_GETREPO_URL: "https://api.github.com/orgs/aodaGit-org/repos",
 };
