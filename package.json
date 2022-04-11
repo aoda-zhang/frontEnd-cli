@@ -1,5 +1,5 @@
 {
-  "name": "frontEnd-cli",
+  "name": "front-end-cli",
   "version": "1.0.0",
   "description": "一个专注于前端工程化的完整脚手架",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "脚手架"
   ],
   "author": {
-    "name": "aoda",
+    "name": "aodaking",
     "email": "aoda2826@qq.com"
   },
   "license": "MIT",
