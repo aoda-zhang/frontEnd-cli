@@ -20,11 +20,6 @@ program
     require("../lib/index.js")(name, options);
   });
 
-// program
-//    // 配置版本号信息
-//   .version(`v${require('../package.json').version}`)
-//   .usage('<command> [option]')
-
 // 帮助命令
 program.on("--help", () => {
   // 使用 figlet 绘制 脚手架Logo
