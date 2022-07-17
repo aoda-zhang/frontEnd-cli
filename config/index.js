@@ -1,6 +1,6 @@
 module.exports = {
   /**脚手架当前支持创建的项目技术 */
-  CURRENT_SUPPORT_KEY: ["react", "vue3", "koa2"],
+  CURRENT_SUPPORT_KEY: ["react", "vue3", "vue2", "nest", "express"],
   /**当前采用的git用户账号*/
   CURRENT_GIT_USER: "aodaGit-org",
   /**当前生成的cli自定义logo名*/
